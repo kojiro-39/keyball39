@@ -92,6 +92,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
             break;
         default:
             set_auto_mouse_enable(true);
+            keyball_handle_auto_mouse_layer_change(state);  // add 0411
             break;
     }
     #endif
